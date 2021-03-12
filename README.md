@@ -1,2 +1,3 @@
-# electrik
-Electrik is a way of adapting binary files to other formats
+# Electrik
+## The advanced extractor
+Electrik allows adaption between formats, designed for game files.
