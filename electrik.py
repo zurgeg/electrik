@@ -17,7 +17,7 @@ else:
   print(f'[WARN] Adapter does not take output argument')
 for i in lines[1:]:
   if i.startswith('Sys.Run('):
-    command = i[8:].strip('(').strip(')')
+    command = i[8:].strip('(').strip(')').format(file=file)
     print(f'Running Command: {command}')
     os.system(command)
  else:
