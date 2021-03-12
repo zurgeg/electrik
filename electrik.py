@@ -20,7 +20,10 @@ for i in lines[1:]:
     command = i[8:].strip('(').strip(')').format(file=file)
     print(f'Running Command: {command}')
     os.system(command)
- else:
+  elif i == '?':
+    print('Adapter ended.')
+    exit()
+  else:
   raise Exception(f'Command {i} is invalid')
   
   
